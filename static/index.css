@@ -49,9 +49,16 @@ body, li, span, p {
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur),auto;
 }
 a {
+    display: inline-block; /* 使用 inline-block 以使链接保持在同一行 */
+    margin-bottom: 10px; /* 如果不需要间距，可以删除此行 */
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
     background-color: transparent;
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto;
+    white-space: nowrap; /* 防止链接文本换行 */
 }
+
 strong{
     color: #FF0066;
 }

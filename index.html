@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
-    <title>语天 YuTian</title>
-    <meta name="description" content="00后煞笔，个人开发者，不懂前端, 学生">
-    <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
+    <title>语天Home-YuTian</title>
+    <meta name="description" content="00后，个人开发者，竞赛生">
+    <meta name="keywords" content="个人网站，小程序，基于Windows的软件开发">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://yutian666.github.io/static/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="./static/index.css">
     <script type="text/javascript">
         if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
             alert('朋友，上古浏览器不支持呢~');
@@ -22,16 +20,16 @@
 
 <body>
     <div id="body-wrap">
-        <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
+        <nav class="not_index_bg" id="nav" style="background-image:url()">
             <div id="page_site-info">
                 <div id="site-title">
                     <span class="blogtitle"></span>
                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                     <script>
                         var typed = new Typed(".blogtitle", {
-                            strings: ['求知若饥，虚心若愚', 'Stay Hungry Stay Foolish'],
-                            startDelay: 300,
-                            typeSpeed: 100;
+                            strings: ['青，取之于蓝而青于蓝；冰，水为之而寒于水', 'Green, take from blue and green in blue; Ice, water is cold for water'],
+                            startDelay: 100,
+                            typeSpeed: 50,
                             loop: true,
                             backSpeed: 50,
                             showCursor: true
@@ -46,11 +44,10 @@
                     <div class="card-widget card-info">
                         <div class="card-content">
                             <div class="card-info-avatar is-center">
-                                <img class="avatar-img"
-                                    src="https://cdn.luogu.com.cn/upload/usericon/655082.png"
+                                <img class="avatar-img" src="https://cdn.luogu.com.cn/upload/usericon/655082.png"
                                     alt="avatar">
                                 <div class="author-info__name">YuTian</div>
-                                <div class="author-info__description">00后 <s>学生，初中</s></div>
+                                <div class="author-info__description">竞赛生-OIer</div>
                             </div>
                             <div class="card-info-social-icons is-center">
                                 <a class="social-icon" href="https://github.com/YuTian666" target="_blank">
@@ -63,15 +60,6 @@
                     <div class="card-widget card-announcement">
                         <div class="card-content">
                             <div class="item-headline">
-                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                                <span>一言</span>
-                            </div>
-                            <div id="hitokoto"></div>
-                        </div>
-                    </div>
-                    <div class="card-widget card-announcement">
-                        <div class="card-content">
-                            <div class="item-headline">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                 <span>今日诗词</span>
                             </div>
@@ -79,24 +67,18 @@
                         </div>
                     </div>
 
-                    <div class="card-widget card-webinfo">
+                    <div class="card-widget card-announcement">
                         <div class="card-content">
                             <div class="item-headline">
-                                <i class="fa fa-line-chart" aria-hidden="true"></i>
-                                <span>站点信息</span>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span>关于我</span>
                             </div>
-                            <div class="webinfo">
-                                <div class="webinfo-item">
-                                    <div class="webinfo-site-uv-name">本站访客数 :</div>
-                                    <div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div>
-                                </div>
-                                <div class="webinfo-item">
-                                    <div class="webinfo-site-name">本站总访问量 :</div>
-                                    <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
-                                </div>
-                            </div>
+                            <p><a href="https://www.luogu.com.cn/user/655082">YuTian</a> in Luogu</p>
+                            <p><a href="https://github.com/YuTian666">YuTian666</a> in GitHub</p>
+                            <p><a href="https://atcoder.jp/users/YuTianQwQ">YuTianQwQ</a> in AtCoder</p>
                         </div>
                     </div>
+
                 </div>
                 <article id="page">
                     <div class="article-container">
@@ -105,88 +87,74 @@
                         </meting-js>
                         <hr>
 
-                        <h2>技能</h2>
+                        <h2>编程语言</h2>
                         <div class="skillbox">
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 5%">
-                                    <span>Java</span>
-                                </div>
-                                <div class="skill-bar-percent">5%</div>
-                            </div>
-							<div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 75%">
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 85%">
                                     <span>C++</span>
                                 </div>
-                                <div class="skill-bar-percent">75%</div>
+                                <div class="skill-bar-percent">85%</div>
                             </div>
-							<div class="skillbar">
+                            <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 80%">
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 80%">
                                     <span>Python</span>
                                 </div>
                                 <div class="skill-bar-percent">80%</div>
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 2%">
-                                    <span>前端</span>
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 40%">
+                                    <span>Java</span>
                                 </div>
-                                <div class="skill-bar-percent">2%</div>
+                                <div class="skill-bar-percent">40%</div>
                             </div>
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 8%">
-                                    <span>Spring</span>
-                                </div>
-                                <div class="skill-bar-percent">8%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 0%">
-                                    <span>SpringMVC</span>
-                                </div>
-                                <div class="skill-bar-percent">0%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 0%">
-                                    <span>SpringBoot</span>
-                                </div>
-                                <div class="skill-bar-percent">0%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 0%">
-                                    <span>Mybatis</span>
-                                </div>
-                                <div class="skill-bar-percent">0%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 50%">
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 60%">
                                     <span>数据结构与算法</span>
                                 </div>
-                                <div class="skill-bar-percent">50%</div>
+                                <div class="skill-bar-percent">60%</div>
                             </div>
                         </div>
 
                         <hr>
-                        <h2>刷题</h2>
-                        <div class="tool">
-                            <a href="https://leetcode-cn.com/problemset/all/" target="_blank">Leetcode</a><br>
-                            <a href="https://www.nowcoder.com/ta/coding-interviews" target="_blank">剑指 Offer</a><br>
-							<a href="https://www.luogu.com.cn/" target="_blank">洛谷</a><br>
-							<a href="https://atcoder.jp/" target="_blank">AtCoder</a><br>
+
+                        <h2>操作系统</h2>
+                        <div class="skillbox">
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 87.99999%">
+                                    <span>Windows</span>
+                                </div>
+                                <div class="skill-bar-percent">87.99999%</div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 25%">
+                                    <span>Linux</span>
+                                </div>
+                                <div class="skill-bar-percent">25%</div>
+                            </div>
+                            <div class="skillbar">
+                                <div class="skillbar-title"
+                                    style="background: linear-gradient(to right, #ffc400 0%, #80fce7 100%); width: 0.000009%">
+                                    <span>MacOS</span>
+                                </div>
+                                <div class="skill-bar-percent">0.00000009%</div>
+                            </div>
                         </div>
 
                         <hr>
-                        <h2>收藏</h2>
+
+                        <h2>刷题</h2>
                         <div class="tool">
-                            <a href="http://tooool.org/" target="_blank" rel="noopener noreferrer">程序员导航、</a>
-                            <a href="https://adzhp.cn/" target="_blank" rel="noopener noreferrer">爱达杂货铺、</a>
-                            <a href="http://ifeve.com/" target="_blank" rel="noopener noreferrer">并发编程网</a>
+                            <a href="https://www.luogu.com.cn/" target="_blank">洛谷</a><br>
+                            <a href="https://atcoder.jp/" target="_blank">AtCoder</a><br>
+                            <a href="https://codeforces.com/" target="_blank">CodeForces</a><br>
+                            <a href="https://onlinejudge.org/" target="_blank">UVA OJ</a><br>
+                            <a href="https://www.spoj.com/" target="_blank">Sphere Online Judge</a><br>
                         </div>
                     </div>
                 </article>
@@ -194,7 +162,7 @@
         </main>
         <footer id="footer">
             <div id="footer-wrap">
-                <div class="copyright">&copy;2023 - 2023 BY YuTian</div>
+                <div class="copyright">&copy;2022 - 2023 BY YuTian</div>
             </div>
         </footer>
     </div>
@@ -216,10 +184,6 @@
     <!--   一言、今日诗词   -->
     <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-
-    <!-- 看板娘 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 
     <!--鼠标点击效果-->
     <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
@@ -271,24 +235,6 @@
                 maxSize: 50,/* 定义雪花最大尺寸 */
                 newOn: 800  /* 定义密集程度，数字越小越密集 */
             });
-        });
-
-        // 浏览器搞笑标题
-        var OriginTitle = document.title;
-        var titleTime;
-        document.addEventListener('visibilitychange', function () {
-            if (document.hidden) {
-                // $('[rel="icon"]').attr('href', "/funny.ico");
-                document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
-                clearTimeout(titleTime);
-            }
-            else {
-                $('[rel="icon"]').attr('href', "/favicon.ico");
-                document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~' + OriginTitle;
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitle;
-                }, 2000);
-            }
         });
     </script>
 </body>
